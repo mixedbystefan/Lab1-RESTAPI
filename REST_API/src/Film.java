@@ -7,7 +7,7 @@ public class Film {
 	double vote_average;
 	String name;
 	
-	
+	// Konstruktor
 	public Film(int id, String original_title, String overview, String release_date, double vote_average, String name) {
 		super();
 		this.id = id;

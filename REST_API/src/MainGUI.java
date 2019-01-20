@@ -95,7 +95,7 @@ public class MainGUI extends JFrame {
 				
 				ArrayList<Film> filmer = JSONUtility.list;
 				
-				if (filmer.size()<1) {ConsoleWindow.setText("Sökningen gav inga resultat");}
+				if (filmer.size()<1) {ConsoleWindow.setText("Sökningen gav inga resultat ALT1");}
 				
 				else {
 				for (Film doc : filmer) 
@@ -128,7 +128,7 @@ public class MainGUI extends JFrame {
 				try {ConsoleWindow.append(RestClient.searchID(searchById));
 					
 				} catch (Exception e2) {
-					ConsoleWindow.setText("Sökningen gav inga resultat");
+					ConsoleWindow.setText("Sökningen gav inga resultat alls ALT1");
 				}
 				
 				
@@ -155,7 +155,7 @@ public class MainGUI extends JFrame {
 				String actorName = searchFilmByActor.getText();
 				RestClient.SearchActor(actorName);
 				ArrayList<Film> filmer = JSONUtility.list;
-				if (filmer.size()<1) {ConsoleWindow.setText("Sökningen gav inga resultat");}
+				if (filmer.size()<1) {ConsoleWindow.setText("Sökningen gav inga resultat alls ALT1");}
 				
 				else {
 					int count = 0;
