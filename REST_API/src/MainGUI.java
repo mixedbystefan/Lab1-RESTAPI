@@ -25,7 +25,7 @@ public class MainGUI extends JFrame {
 	private JTextField searchFilmByActor;
 	
 	
-	 // Huvudmetod
+	 
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -42,7 +42,7 @@ public class MainGUI extends JFrame {
 	
 	
 
-	// Huvudförnstret skapas
+	
 	
 	public MainGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -81,7 +81,7 @@ public class MainGUI extends JFrame {
 		
 		JButton btnNewButton = new JButton("Sök film");
 		
-		// Sökning efter filmer
+		
 		
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -113,7 +113,7 @@ public class MainGUI extends JFrame {
 		btnNewButton.setBounds(459, 91, 139, 29);
 		contentPane.add(btnNewButton);
 		
-		// Sökning baserad på film ID
+		
 		
 		JButton btnSkFilmid = new JButton("Sök Film(ID)");
 		btnSkFilmid.addActionListener(new ActionListener() {
